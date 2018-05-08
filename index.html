@@ -1,0 +1,115 @@
+<html>
+<head>
+<title>Kms66 Land</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  
+<script language="JavaScript" Type="text/javascript">
+<!--
+function popupMsg(theMsg) {
+alert(theMsg);
+}
+//-->
+</script>
+  
+  <script>
+var isNS = (navigator.appName == "Chrome") ? 1 : 0;
+if(navigator.appName == "Chrome") document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
+function mischandler(){
+return false;
+}
+function mousehandler(e){
+var myevent = (isNS) ? e : event;
+var eventbutton = (isNS) ? myevent.which : myevent.button;
+if((eventbutton==2)||(eventbutton==3)) return false;
+}
+document.oncontextmenu = mischandler;
+document.onmousedown = mousehandler;
+document.onmouseup = mousehandler;
+</script>
+
+<style>
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 80%;
+    height: 70%;
+}
+	</style>
+  
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">MrFrieza</a>
+    </div>
+    <ul class="nav navbar-nav navbar-left">
+      <li class="active"><a href="#">Live</a></li>
+      <li><a type="button" onclick="load('//player.twitch.tv/?volume=1&!muted&channel=Kms66')" value="Ma chaine"> Ma chaine </a></li>
+<li><a type="button" onclick="load('https://streamlabs.com/Kms66')" value="Donations"> Donations </a></li>
+<li><a type="button" onclick="load('http://kms66.streaming.lv/?rank')" value="Rank"> Rank </a></li>
+<li><a type="button" onclick="load('https://discord.gg/gPh2Z4Z')" value="Discord"> Discord </a></li>
+	    
+    </ul>
+     <ul class="nav navbar-nav navbar-right">
+      <li><script type="text/javascript" src="//livecounter.theyosh.nl/2987.js"></script></li>
+    </ul>
+  </div>
+  </nav>
+	
+
+
+
+<script>
+function load(page) {
+  document.getElementById("my_iframe").src = page;
+}
+</script>
+
+
+<div class="video-container">
+<iframe id="my_iframe" frameborder="0" autoplay="1" allowfullscreen=allowfullscreen></iframe>
+</body>
+    
+  <div class="container" id="player" align="left" style="display: none">
+  <script>
+    var player = new Clappr.Player({
+      source: "",
+      width:960,
+      height:540,
+      autoPlay: true,
+      parentId: "#player"})
+    ;
+  </script></div>
+ 
+	<script type="text/javascript">
+    function hello(){
+	alert('Bienvenue chez Kms66 ! :') );
+}
+$(function(){
+	$('div[onload]').trigger('onload');
+});
+  </script>
+	
+	<div style="display: none" onload="$(this).text('()');"></div>
+<div style="display: none" onload="hello()"></div>
+	
+	
+    
+  
+</body>
+
+</html>
